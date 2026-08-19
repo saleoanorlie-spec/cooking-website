@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="utf 8"/>
+ <title>My Favorite Hobby - Cooking</title>
+ <style>
+ body{
+ font-family: Arial, sans-serif;
+ background-color: #FFFFFF;
+ margin: 0;
+ padding: 25px;
+ line-height: 1.6;
+ color: #333333;
+ }
+ nav{
+ background-color: #FF7F50 ;
+ padding: 15px;
+ text-align: center;
+ position: sticky;
+ top: 0;
+ margin-bottom: 25px;
+ border-radius: 5px;
+ }
+ nav a{
+ color: white;
+ text-decoration: none;
+ font-weight: bold;
+ margin: 0 12px;
+ font-size: 16px;
+ }
+ nav a:hover{
+ text-decoration: underline;
+ }
+ h1{
+ color: #FF7F50;
+ text-align: center;
+ font-size: 28px;
+ margin-bottom:30px;
+ }
+ h2{
+ color: #FF7F50;
+ text-align: center;
+ font-size: 26px;
+ margin-top: 0;
+ }
+ img{
+ width: 300px;
+ display: block;
+ margin: 25px auto;
+ border-radius: 10px;
+ box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+ }
+ .section{
+ background: #FFE4E1;
+ padding: 20px;
+ margin: 20px auto;
+ border-radius: 15px;
+ max-width: 500px;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+ }
+ .divider{
+ border: none;
+ border-top: 2px dashed #FF7F50;
+ margin: 25px 0;
+ }
+ footer{
+ text-align: center;
+ background: #FF7F50;
+ color: white;
+ padding: 15px;
+ margin-top: 30px;
+ border-radius: 8px;
+ font-weight: bold;
+ }
+ a.link{
+ color: #FF7F50;
+ text-decoration: none;
+ font-weight: bold;
+ }
+ a.link:hover{
+ text-decoration: underline;
+ }
+ audio{
+ display: block;
+ margin: 15px auto;
+ }
+ .page{
+ display: none;
+ }
+ #home{
+ display: block;
+ }
+ </style>
+ <script>
+ function showPage(pageId) {
+     document.querySelectorAll('.page').forEach(page => {
+         page.style.display = 'none';
+     });
+     document.getElementById(pageId).style.display = 'block';
+     window.scrollTo(0,0);
+ }
+ </script>
+ </head>
+ <body>
+ <nav>
+ <a href="#" onclick="showPage('home'); return false;">Home</a> 
+ <a href="#" onclick="showPage('about'); return false;">About Me</a> 
+ <a href="#" onclick="showPage('recipes'); return false;">My Recipes</a> 
+ <a href="#" onclick="showPage('tips'); return false;">Cooking Tips</a> 
+ <a href="#" onclick="showPage('contact'); return false;">Contact</a>
+ <h1> My Favorite Hobby: Cooking</h1>
+ <!-- ========== PAGE 1: HOME ========== -->
+ <div id="home" class="page">
+ <div class="section">
+ <h2>Welcome to My Cooking World!</h2>
+ <p style="text-align:center; font-size:17px;">
+ Hello! My name is Zhyrel Keith A. Saleo-an and I love cooking food! 😊 </p>
+ </div>
+ <hr class="divider">
+ <div class="section">
+ <h2>Why I Love Cooking</h2>
+ <p style="text-align:center; font-size:17px;">
+ Cooking is my favorite hobby because it allows me to be creative and express myself through food. It helps me learn new recipes and improve my skills every time I prepare a meal. Cooking also teaches me patience and attention to detail. I feel happy whenever people enjoy the food I make for them.
+ </p>
+ </div>
+ <hr class="divider">
+ <div class="section">
+ <img src="My Cooking Photo" width=350>
+ <img src="Cooking.jpg" alt="Cooking - My Favorite Hobby">
+ </div>
+ <hr class="divider">
+ <div class="section">
+ </h1>🎵 Relaxing Cooking Music</h1>
+ <audio controls>
+ <source src="cooking-music.mp3" type="audio/mpeg">
+ </div>
+ <hr class="divider">
+ <div class="section">
+ <h2>🔗 Useful Links</h2>
+ <p style="text-align:center; font-size:17px;">
+ Want to learn more recipes? Visit<br>
+ <a href="https://www.allrecipes.com" target="_blank" class="link">AllRecipes.com</a><br>
+  </p>for more delicious ideas! </div>
+ <!-- ========== PAGE 2: ABOUT ME ========== -->
+ <div id="about" class="page">
+ <div class="section">
+ <h2>Who I Am</h2>
+ <p style="text-align:center; font-size:17px;">
+ Hi! My name is Zhyrel Keith A. Saleo-an. I am a student who loves cooking very much. I started cooking when I was young, helping my parents in the kitchen. Since then, my passion for food has grown more and more each day. </p>
+ </div>
+ <hr class="divider">
+ <div class="section">
+ <h2>Why I Started Cooking</h2>
+ <p style="text-align:center; font-size:17px;">
+ Cooking is not just a hobby for me — it is a way to show love and care to my family and friends. Seeing them smile while eating what I cooked gives me so much joy and motivation to learn more.</p>
+ </div>
+ <hr class="divider">
+ <div class="section">
+ <h2>My Passion</h2>
+ <p style="text-align:center; font-size:17px;">
+ I started because I wanted to be able to make food for myself and others. Over time, I realized that cooking is an art and a science combined. It requires creativity, patience, and the willingness to learn from mistakes.</p>
+ </div>
+ </div>
+ <!-- ========== PAGE 3: MY RECIPES ========== -->
+ <div id="recipes" class="page">
+ <h1>📖 My Favorite Recipes</h1>
+ <div class="section">
+ <h2>#1 Filipino Spaghetti </h2>
+ <img src="spaghetti.jpg" alt="Filipino Spaghetti">
+ <p style="text-align:center; font-size:17px;">
+ This is my favorite dish to cook! It is sweet and creamy, just like how Filipinos love it. I use banana ketchup, hot dogs, and lots of cheese on top. My family always asks for seconds whenever I make this. </p>
+ </div>
+ <hr class="divider">
+ <div class="section">
+ <h2>#2 Fried Chicken </h2>
+ <img src="chicken.jpg" alt="Fried Chicken">
+ <p style="text-align:center; font-size:17px;">
+ <Simple but delicious! I learned that the secret to crispy fried chicken is the right marination and temperature of the oil. It takes practice, but the result is worth it — golden, crunchy, and juicy. </p>
+ </div>
+ <hr class="divider">
+ <div class="section">
+ <h2>#3 Sinigang </h2>
+ <img src="sinigang.jpg" alt="Sinigang">
+ <p style="text-align:center; font-size:17px;">
+</p> Sinigang is a classic Filipino soup that is sour and savory. I love cooking this because it reminds me of home. You can use pork, shrimp, or fish, and add plenty of vegetables like kangkong, radish, and eggplant.</div>
+ <!-- ========== PAGE 4: COOKING TIPS ========== -->
+ <div id="tips" class="page">
+ <h1>💡 Cooking Tips & Tricks</h1>
+ <div class="section">
+ <h2>Tip 1: Preparation is Key</h2>
+ <p style="text-align:center; font-size:17px;">
+</p> Before you start cooking, make sure all your ingredients are washed, cut, and measured. This is called "mise en place." It helps you cook smoothly without rushing and prevents mistakes or burning your food.</div>
+ <hr class="divider">
+ <div class="section">
+ <h2>Tip 2: Don't Rush the Heat</h2>
+ <p style="text-align:center; font-size:17px;">
+</p> Cooking on high heat all the time does not make food cook faster — it often burns the outside while the inside remains raw. Be patient and use the right heat level for each ingredient. </div>
+ <hr class="divider">
+ <div class="section">
+ <h2>Tip 3: Taste as You Go</h2>
+ <p style="text-align:center; font-size:17px;">
+</p> Seasoning is not a one-time thing. Taste your food while cooking and adjust the salt, sugar, or spices little by little. It is easier to add more seasoning than to fix an over-salted dish. </div>
+ <hr class="divider">
+ <div class="section">
+ <h2>Tip 4: Clean As You Cook</h2>
+ <p style="text-align:center; font-size:17px;">
+ Keep your workspace clean while cooking. Wash utensils and wipe spills immediately. A clean kitchen makes cooking more enjoyable and less stressful.</p>
+ </div>
+ <div id="contact" class="page">
+ <h1>📬 Contact Me</h1>
+ <div class="section">
+ <h2>Get In Touch!</h2>
+ <p style="text-align:center; font-size:17px;">
+</p> Do you have questions, suggestions, or want to share your own recipes with me? I would love to hear from you! Feel free to reach out anytime. </div>
+ <hr class="divider">
+ <div class="section">
+ <h2>📧 Email Me</h2>
+ <p style="text-align:center; font-size:17px;">
+<progress. Send me a message at:<br>
+ <a href="mailto:zhyrel.saleo-an@example.com" class="link">zhyrel.saleo-an@example.com</a>
+ </p>
+ </div>
+ <hr class="divider">
+ <div class="section">
+ <h2>🔗 Visit My Favorite Website</h2>
+ <p style="text-align:center; font-size:17px;">
+</p> Want more recipes and cooking inspiration? Check out<br>
+ <a href="https://www.allrecipes.com" target="_blank" class="link">AllRecipes.com</a><br>
+ </div> it's one of the best resources for home cooks!</div>
+ Created by: Zhyrel Keith A. Saleo-an | My Favorite Hobby Website
+ </footer>
+ </body>
+ </html>dy>
+ </html>>ooter>
+ </body>
+ </html>dy>
+ </html>ith A. Saleo-an | My Favorite Hobby Website
+ </footer>
+ </body>
+ </html>dy>
+ </html>>ooter>
+ </body>
+ </html>dy>
+ </html>
